@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.market.PrimaryController">
+   <children>
+      <BorderPane layoutX="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" />
+      <Button fx:id="signUpButton" layoutX="503.0" layoutY="299.0" onAction="#onSignUpClick" prefHeight="38.0" prefWidth="118.0" text="New Account">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="exit" layoutX="438.0" layoutY="494.0" minWidth="46.0" onAction="#onExitButtonClick" prefHeight="30.0" prefWidth="97.0" text="Exit">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <VBox layoutX="-1.0" prefHeight="600.0" prefWidth="202.0" style="-fx-background-color: #1e90ff;">
+         <children>
+            <AnchorPane prefHeight="90.0" prefWidth="211.0" style="-fx-background-color: #78addf;">
+               <children>
+                  <Label layoutX="19.0" layoutY="27.0" text="Java Market">
+                     <font>
+                        <Font name="Arial" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="510.0" prefWidth="202.0">
+               <children>
+                  <Label layoutX="42.0" layoutY="172.0" text="‣ Welcome" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <Label layoutX="322.0" layoutY="304.0" text="Sign Up" textFill="#6aa6df">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="clientLogin" layoutX="505.0" layoutY="216.0" onAction="#onClientLoginClick" prefHeight="38.0" prefWidth="118.0" text="Login">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="322.0" layoutY="219.0" text="Login" textFill="#6aa6df">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

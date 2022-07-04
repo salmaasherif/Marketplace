@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.market.ClientAccount">
+   <children>
+      <AnchorPane id="AnchorPane" layoutY="-5.0" prefHeight="616.0" prefWidth="810.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <VBox prefHeight="616.0" prefWidth="202.0" style="-fx-background-color: #1e90ff;">
+               <children>
+                  <AnchorPane prefHeight="90.0" prefWidth="211.0" style="-fx-background-color: #78addf;">
+                     <children>
+                        <Label layoutX="19.0" layoutY="27.0" text="Java Market">
+                           <font>
+                              <Font name="Arial" size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="534.0" prefWidth="202.0">
+                     <children>
+                        <Label layoutX="19.0" layoutY="186.0" text="‣ Your Account" textFill="WHITE">
+                           <font>
+                              <Font name="Arial" size="24.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="56.0" layoutY="435.0" mnemonicParsing="false" onAction="#onBackClick" prefHeight="30.0" prefWidth="87.0" text="Back" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <HBox layoutX="261.0" layoutY="528.0" prefHeight="36.0" prefWidth="164.0" />
+            <HBox layoutX="542.0" layoutY="528.0" prefHeight="36.0" prefWidth="164.0">
+               <children>
+                  <Label />
+               </children>
+            </HBox>
+            <Label layoutX="261.0" layoutY="77.0" text="Current Balance" />
+            <Label layoutX="262.0" layoutY="143.0" text="Deposit Cash" />
+            <Label layoutX="263.0" layoutY="208.0" text="History of Purchased Items " />
+            <Button layoutX="520.0" layoutY="138.0" mnemonicParsing="false" onAction="#onDepositClick" text="Deposit" />
+            <TextField fx:id="amount" layoutX="374.0" layoutY="138.0" prefHeight="30.0" prefWidth="114.0" promptText="Enter Amount" />
+            <TableView fx:id="table1" editable="true" layoutX="261.0" layoutY="245.0" prefHeight="292.0" prefWidth="314.0" tableMenuButtonVisible="true">
+               <columns>
+                  <TableColumn fx:id="itemColumn1" prefWidth="110.4000244140625" text="Item" />
+                  <TableColumn fx:id="quantityColumn1" prefWidth="92.79998779296875" text="Quantity" />
+                  <TableColumn fx:id="priceColumn1" prefWidth="112.79995727539062" text="Price" />
+               </columns>
+            </TableView>
+            <Label fx:id="totbalance" layoutX="389.0" layoutY="77.0" text="Label" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

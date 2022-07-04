@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.market.HomeController">
+   <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="593.0" prefWidth="800.0" style="-fx-background-color: #FFFFFF;">
+      <children>
+         <VBox layoutX="-1.0" prefHeight="600.0" prefWidth="202.0" style="-fx-background-color: #1e90ff;">
+            <children>
+               <AnchorPane prefHeight="90.0" prefWidth="211.0" style="-fx-background-color: #78addf;">
+                  <children>
+                     <Label layoutX="19.0" layoutY="27.0" text="Java Market">
+                        <font>
+                           <Font name="Arial" size="30.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </AnchorPane>
+               <AnchorPane prefHeight="377.0" prefWidth="202.0">
+                  <children>
+                     <Label layoutX="23.0" layoutY="172.0" text="‣ Food Section" textFill="WHITE">
+                        <font>
+                           <Font name="Arial" size="24.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </AnchorPane>
+            </children>
+         </VBox>
+         <GridPane fx:id="productGridPane" layoutX="264.0" layoutY="24.0" prefHeight="546.0" prefWidth="506.0">
+           <columnConstraints>
+             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+           </columnConstraints>
+           <rowConstraints>
+             <RowConstraints maxHeight="295.20001831054685" minHeight="10.0" prefHeight="295.20001831054685" vgrow="SOMETIMES" />
+             <RowConstraints maxHeight="241.60002441406252" minHeight="10.0" prefHeight="232.0" vgrow="SOMETIMES" />
+             <RowConstraints maxHeight="111.59995117187498" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+           </rowConstraints>
+         </GridPane>
+         <HBox layoutX="260.0" layoutY="239.0" prefHeight="30.0" prefWidth="164.0">
+            <children>
+               <Button fx:id="add1Button" mnemonicParsing="false" onAction="#onAddTomClick" text="Add to Cart" />
+               <TextField fx:id="q1" prefHeight="30.0" prefWidth="70.0" promptText="Quantity" />
+            </children>
+         </HBox>
+         <HBox layoutX="516.0" layoutY="239.0" prefHeight="30.0" prefWidth="164.0">
+            <children>
+               <Button fx:id="add1Button" mnemonicParsing="false" onAction="#onAddBanClick" text="Add to Cart" />
+               <TextField fx:id="q2" prefHeight="30.0" prefWidth="70.0" promptText="Quantity" />
+            </children>
+         </HBox>
+         <HBox layoutX="260.0" layoutY="536.0" prefHeight="30.0" prefWidth="164.0">
+            <children>
+               <Button fx:id="add1Button" mnemonicParsing="false" onAction="#onAddCheeseClick" text="Add to Cart" />
+               <TextField fx:id="q3" prefHeight="30.0" prefWidth="70.0" promptText="Quantity" />
+            </children>
+         </HBox>
+         <HBox layoutX="511.0" layoutY="533.0" prefHeight="30.0" prefWidth="164.0">
+            <children>
+               <Button fx:id="add1Button" mnemonicParsing="false" onAction="#onAddPizzaClick" text="Add to Cart" />
+               <TextField fx:id="q4" prefHeight="30.0" prefWidth="70.0" promptText="Quantity" />
+            </children>
+         </HBox>
+         <Button layoutX="54.0" layoutY="503.0" mnemonicParsing="false" onAction="#onBackClick" prefHeight="30.0" prefWidth="87.0" text="Back" />
+         <Button fx:id="cartButton" layoutX="55.0" layoutY="441.0" mnemonicParsing="false" onAction="#onCartClick" prefHeight="30.0" prefWidth="87.0" text="Cart" />
+         <ImageView fx:id="cimg" fitHeight="50.0" fitWidth="46.0" layoutX="75.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../../../../../../Downloads/cart.png" />
+            </image>
+         </ImageView>
+      </children>
+   </AnchorPane>
+</VBox>
