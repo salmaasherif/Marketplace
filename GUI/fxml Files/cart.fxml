@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.market.CartController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="616.0" prefWidth="810.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <VBox prefHeight="616.0" prefWidth="202.0" style="-fx-background-color: #1e90ff;">
+               <children>
+                  <AnchorPane prefHeight="90.0" prefWidth="211.0" style="-fx-background-color: #78addf;">
+                     <children>
+                        <Label layoutX="19.0" layoutY="27.0" text="Java Market">
+                           <font>
+                              <Font name="Arial" size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="534.0" prefWidth="202.0">
+                     <children>
+                        <Label layoutX="60.0" layoutY="172.0" text="‣ Cart" textFill="WHITE">
+                           <font>
+                              <Font name="Arial" size="24.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="78.0" layoutY="435.0" mnemonicParsing="false" onAction="#onBackClick" text="Back" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="260.0" layoutY="332.0" pickOnBounds="true" preserveRatio="true" />
+            <HBox layoutX="217.0" layoutY="362.0" prefHeight="38.0" prefWidth="212.0">
+               <children>
+                  <Label prefHeight="20.0" prefWidth="153.0" text="Item Name" />
+                  <TextField prefHeight="30.0" prefWidth="187.0" promptText="Item Name" />
+               </children>
+            </HBox>
+            <Button fx:id="checkout" layoutX="280.0" layoutY="512.0" mnemonicParsing="false" onAction="#onCheckoutClick" text="Checkout" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="389.0" layoutY="27.0" text="Modify and View Cart">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" editable="true" layoutX="440.0" layoutY="81.0" prefHeight="498.0" prefWidth="354.0" tableMenuButtonVisible="true">
+         <columns>
+            <TableColumn fx:id="itemColumn" prefWidth="106.4000244140625" text="Item" />
+            <TableColumn fx:id="quantityColumn" prefWidth="123.20001220703125" text="Quantity" />
+            <TableColumn fx:id="priceColumn" prefWidth="83.2000732421875" text="Price" />
+         </columns>
+      </TableView>
+      <Label layoutX="227.0" layoutY="99.0" prefHeight="34.0" prefWidth="177.0" text="Edit Quantity of any Item ">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <VBox layoutX="218.0" layoutY="145.0" prefHeight="84.0" prefWidth="212.0">
+         <children>
+            <HBox prefHeight="38.0" prefWidth="212.0">
+               <children>
+                  <Label prefHeight="20.0" prefWidth="153.0" text="Item Name" />
+                  <TextField prefHeight="30.0" prefWidth="187.0" promptText="Item Name" />
+               </children>
+            </HBox>
+            <HBox prefHeight="45.0" prefWidth="212.0">
+               <children>
+                  <Label prefHeight="20.0" prefWidth="153.0" text="Quantity" />
+                  <TextField prefHeight="30.0" prefWidth="186.0" promptText="Needed Quantity" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Label layoutX="227.0" layoutY="316.0" prefHeight="34.0" prefWidth="202.0" text="Remove any Item from Cart">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="279.0" layoutY="238.0" mnemonicParsing="false" onAction="#onChangeClick" text="Change" />
+      <Button layoutX="283.0" layoutY="408.0" mnemonicParsing="false" onAction="#onRemoveClick" text="Remove" />
+   </children>
+</AnchorPane>
