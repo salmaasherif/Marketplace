@@ -2,6 +2,11 @@ import java.io.*;
 import java.net.*;
 import java.util.ArrayList;
 
+/**
+ *
+ * @author Salma
+ */
+
 // Server class
 public class Server {
 
